@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    
+
+
+    <!-- Header -->
+      <div class="container-fluid text-center" id="header">
+
+        <div class="row">
+            <div class="small-1 columns">
+                <h3><b>Red Panthers</b>  <i class="step fi-address-book size-36"></i> </h3>
+
+            </div>
+            <div class="small-5 columns"><br>
+                <h6>Work with Red Panthers <a href="#" class="button">Simple Button</a></h6>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="small-6 large-centered columns">
+                <h3>Hello! Come work with <b>Red Panthers</b> </h3> WE SPECIALIZE IN HELPING OUR CLIENTS VALIDATE, BUILD AND EXPAND THEIR BUSINESS THROUGH TECHNOLOGY</div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <%= yield %>
+
+    <!-- Footer -->
+ 
+  <footer id="foot" class="row text-center">
+    <div class="large-12 columns">
+     <div class="row" id=footinside>
+     <br>
+        <div class="large-6 columns">
+        <div class="row">
+          <p>&copy; Copyright no one at all. Go to town.</p></div>
+        </div>
+        <div class="large-6 columns">
+          <div class="row">
+          <i class="step fi-social-facebook " ></i>
+          <i class="step fi-social-twitter  "></i>
+          <i class="step fi-social-facebook "></i>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
